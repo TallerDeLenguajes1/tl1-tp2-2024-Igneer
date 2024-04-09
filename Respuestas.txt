@@ -1,0 +1,8 @@
+## ¿Puede ver el archivo tp2_1_2.c?
+No se puede ver el archivo porque fue creado en la rama Opcion_2, todas las ramas son independientes entre sí con los cambios realizados en la misma, y como no hice un merge ni nada, no se verán en el main los cambios que realicé en la rama Opcion_2
+
+## En la linea principal se agrega Respuestas.txt...¿Qué diferencias nota al ejecutar gitk --all?
+La diferencia que puedo notar es que se produce una ramificación bien pronunciada, en la "linea" de main se puede ver el primer commit y que le sigue el commit de Respuestas.txt, mientras que de la linea principal sale una rama mostrando los commit que realice en la rama Opcion_2.
+
+## Luego de utilizar git merge...¿Qué nota?
+Noto que todos los cambios que hice en la rama Opcion_2 quedan pactados en la rama principal
