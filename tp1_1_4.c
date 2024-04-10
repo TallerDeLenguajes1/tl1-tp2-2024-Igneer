@@ -47,7 +47,7 @@ int main()
         }while(PCs[i].cantidad < 1 || PCs[i].cantidad > 8);
 
 
-        int j = rand()%6; //indice para agarrar de forma aleatoria un tipo de procesador
+        int j = rand() % 6; //indice para agarrar de forma aleatoria un tipo de procesador
         PCs[i].tipo_cpu = &tipos[j][0];        
 
         printf("\n");
@@ -92,7 +92,7 @@ void PCvieja(struct compu PCs[], int tam)
         printf("Anio: %d\n", PCs[j].anio);
         printf("Nucleos del procesador: %d nucleos\n", PCs[j].cantidad);
         printf("Marca del procesador: ");
-        puts(PCs->tipo_cpu);
+        puts(PCs[j].tipo_cpu);
         printf("-------------------------------------------\n");
 }
 
@@ -113,6 +113,6 @@ void PCveloz(struct compu PCs[], int tam)
         printf("Anio: %d\n", PCs[j].anio);
         printf("Nucleos del procesador: %d nucleos\n", PCs[j].cantidad);
         printf("Marca del procesador: ");
-        puts(PCs->tipo_cpu);
+        puts(PCs[j].tipo_cpu);
         printf("-------------------------------------------\n");
 }
